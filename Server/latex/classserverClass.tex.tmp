@@ -1,0 +1,77 @@
+\hypertarget{classserverClass}{}\doxysection{server\+Class Class Reference}
+\label{classserverClass}\index{serverClass@{serverClass}}
+
+
+This is the class in charge of manage the creation of the server and it implements Q\+Tcp\+Socket class.  
+
+
+
+
+{\ttfamily \#include $<$serverclass.\+h$>$}
+
+
+
+Inheritance diagram for server\+Class\+:
+% FIG 0
+
+
+Collaboration diagram for server\+Class\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classserverClass_a563740d58fab745f720737cc2909c7cd}{server\+Class}} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em This is the method in charge of start the socket connection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classserverClass_ac5a8b30f5ed53ea067f86381745d0754}{send\+Message}} (const Q\+String \&message)
+\begin{DoxyCompactList}\small\item\em This is the method in charge of send messages to the clients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classserverClass_a4b01c74fd91d1746955bd61f71be940b}\label{classserverClass_a4b01c74fd91d1746955bd61f71be940b}} 
+Q\+Tcp\+Socket $\ast$ {\bfseries m\+Socket}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the class in charge of manage the creation of the server and it implements Q\+Tcp\+Socket class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classserverClass_a563740d58fab745f720737cc2909c7cd}\label{classserverClass_a563740d58fab745f720737cc2909c7cd}} 
+\index{serverClass@{serverClass}!serverClass@{serverClass}}
+\index{serverClass@{serverClass}!serverClass@{serverClass}}
+\doxysubsubsection{\texorpdfstring{serverClass()}{serverClass()}}
+{\footnotesize\ttfamily server\+Class\+::server\+Class (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+This is the method in charge of start the socket connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+Object} & parent. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classserverClass_ac5a8b30f5ed53ea067f86381745d0754}\label{classserverClass_ac5a8b30f5ed53ea067f86381745d0754}} 
+\index{serverClass@{serverClass}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!serverClass@{serverClass}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily void server\+Class\+::send\+Message (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{message }\end{DoxyParamCaption})}
+
+
+
+This is the method in charge of send messages to the clients. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+String} & message. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+serverclass.\+h\item 
+serverclass.\+cpp\end{DoxyCompactItemize}
