@@ -1,5 +1,4 @@
 #include "graph.h"
-
 #include <QMessageBox>
 #include <iostream>
 #include <bits/stdc++.h>
@@ -7,27 +6,11 @@
 #include <iomanip>
 #include <QPixmap>
 #include <QTcpSocket>
-
 #include <QVector>
-
-
 #include "edge.h"
-
-
 #include <QDebug>
 
-
-
 using namespace std;
-
-
-
-
-
-
-
-
-
 
 /**
  *@brief This is the constructor of the Graph class.
@@ -221,12 +204,6 @@ QString Graph::printPath(QVector< QVector<int> > path, int start, int end) {
  */
 QString Graph::printSolution(QVector< QVector<int> > path, int nodes, int start, int end) {
 
-    QString pathString1 = printPath(path, start, end);
-
-    qDebug() << pathString1;
-
-    //printf(pathString1.toStdString().c_str());
-
     QString text("Floyd Warshall Algorithm\n\n");
     QString pathString("");
 
@@ -267,10 +244,6 @@ QString Graph::printSolution(QVector< QVector<int> > path, int nodes, int start,
         }
 
     }
-
-    qDebug() << text;
-
-    printf(text.toStdString().c_str());
 
     return *textPtr;
 

@@ -8,7 +8,6 @@
 #include <iomanip>
 #include <QPixmap>
 #include <QTcpSocket>
-
 #include "graph.h"
 
 using namespace std;
@@ -26,11 +25,6 @@ QVector< QVector<int> >* edgesPtr = &edges;
 
 int graphSize = edges.size() - 1;
 int* graphSizePtr = &graphSize;
-
-
-
-
-
 
 /**
  *@brief This is the method in charge of setting up the window.
@@ -131,7 +125,3 @@ void Widget::on_closePushButton_clicked() {
     close();
 
 }
-
-
-
-
