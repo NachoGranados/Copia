@@ -1,11 +1,9 @@
 #ifndef EDGE_H
 #define EDGE_H
 
+struct Edge {
 
-class Edge
-{
 public:
-    Edge();
 
     int start;
     int end;

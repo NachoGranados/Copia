@@ -1091,7 +1091,10 @@ widget.o: ../Server/widget.cpp ../Server/widget.h \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qdialog.h \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtGui/QPixmap \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtNetwork/QTcpSocket \
-		../../../Qt5.9.0/5.9/gcc_64/include/QtNetwork/qtcpsocket.h
+		../../../Qt5.9.0/5.9/gcc_64/include/QtNetwork/qtcpsocket.h \
+		../Server/graph.h \
+		../../../Qt5.9.0/5.9/gcc_64/include/QtCore/QVector \
+		../Server/edge.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o widget.o ../Server/widget.cpp
 
 serverclass.o: ../Server/serverclass.cpp ../Server/serverclass.h \
@@ -1207,6 +1210,7 @@ graph.o: ../Server/graph.cpp ../Server/graph.h \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qregexp.h \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qstringmatcher.h \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtCore/qpoint.h \
+		../Server/edge.h \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/QMessageBox \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -1275,7 +1279,8 @@ graph.o: ../Server/graph.cpp ../Server/graph.h \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtNetwork/qtcpsocket.h \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtNetwork/qtnetworkglobal.h \
 		../../../Qt5.9.0/5.9/gcc_64/include/QtNetwork/qtnetwork-config.h \
-		../../../Qt5.9.0/5.9/gcc_64/include/QtNetwork/qabstractsocket.h
+		../../../Qt5.9.0/5.9/gcc_64/include/QtNetwork/qabstractsocket.h \
+		../../../Qt5.9.0/5.9/gcc_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o graph.o ../Server/graph.cpp
 
 edge.o: ../Server/edge.cpp ../Server/edge.h

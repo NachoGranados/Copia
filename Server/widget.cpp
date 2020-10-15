@@ -10,12 +10,13 @@
 #include <QTcpSocket>
 #include "graph.h"
 
-using namespace std;
-
 int globalStart;
 int globalEnd;
 int* globalStartPtr = &globalStart;
 int* globalEndPtr = &globalEnd;
+
+int infinite = INT_MAX;
+int* infinitePtr = &infinite;
 
 int nodes = 4;
 int* nodesPtr = &nodes;
@@ -75,11 +76,11 @@ void Widget::on_startPushButton_clicked() {
  */
 void Widget::on_sendResultPushButton_clicked() {
 
-    Graph graph(*edgesPtr, *graphSizePtr);
+    Graph graph(*edgesPtr);
 
-    QVector< QVector<int> > floydWarshallMatrix = graph.createMatrix(graph.matrix, *nodesPtr);
+    QVector< QVector<int> > floydWarshallMatrix = graph.createMatrix(graph.matrix, *nodesPtr, *infinitePtr);
 
-    QString newText(graph.floydWarshall(floydWarshallMatrix, *nodesPtr, *globalStartPtr, *globalEndPtr));
+    QString newText(graph.floydWarshall(floydWarshallMatrix, *nodesPtr, *infinitePtr, *globalStartPtr, *globalEndPtr));
 
     mServerClass -> sendMessage(newText);
 

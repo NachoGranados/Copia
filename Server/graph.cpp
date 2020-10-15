@@ -1,35 +1,19 @@
 #include "graph.h"
-#include <QMessageBox>
-#include <iostream>
-#include <bits/stdc++.h>
-#include <climits>
-#include <iomanip>
-#include <QPixmap>
-#include <QTcpSocket>
 #include <QVector>
 #include "edge.h"
-#include <QDebug>
 
-using namespace std;
+QVector<Edge> matrix;
 
 /**
  *@brief This is the constructor of the Graph class.
  *@param QVector< QVector<int> > edges.
  *@param int size.
  */
-Graph::Graph(QVector< QVector<int> > edges, int size) {
-
-    QVector<Edge> matrix;
-
-    Edge current;
+Graph::Graph(QVector< QVector<int> > edges) {
 
     for (auto &edges : edges) {
 
-        current.start = edges[0];
-        current.end = edges[1];
-        current.distance = edges[2];
-
-        matrix.push_back(current);
+        matrix.push_back({edges[0],edges[1],edges[2]});
 
     }
 
@@ -111,16 +95,14 @@ int Graph::findDistance(QVector<Edge> edges, int start, int end) {
  *@param int nodes.
  *@return QVector< QVector<int> >.
  */
-QVector< QVector<int> > Graph::createMatrix(QVector<Edge> edges, int nodes) {
+QVector< QVector<int> > Graph::createMatrix(QVector<Edge> edges, int nodes, int infinite) {
 
     int zeroReference = 0;
     int actualNode = 0;
     int counter = 0;
-    int infinite = INT_MAX;
     int* zeroReferencePtr = &zeroReference;
     int* actualNodePtr = &actualNode;
     int* counterPtr = &counter;
-    int* infinitePtr = &infinite;
 
     QVector< QVector<int> > finalVec = {};
     QVector< QVector<int> >* finalVecPtr = &finalVec;
@@ -134,7 +116,7 @@ QVector< QVector<int> > Graph::createMatrix(QVector<Edge> edges, int nodes) {
 
         actualEdgesNode = actualEdges(edges, *actualNodePtr);
 
-        for (int i = 0; i <= nodes; i ++) {
+        for (int i = 0; i < nodes; i ++) {
 
             if (i == *zeroReferencePtr) {
 
@@ -149,7 +131,7 @@ QVector< QVector<int> > Graph::createMatrix(QVector<Edge> edges, int nodes) {
 
                 } else {
 
-                    newVec.push_back(*infinitePtr);
+                    newVec.push_back(infinite);
 
                 }
 
@@ -258,13 +240,10 @@ QString Graph::printSolution(QVector< QVector<int> > path, int nodes, int start,
  *@param int end.
  *@return QString.
  */
-QString Graph::floydWarshall(QVector< QVector<int> > matrix, int nodes, int start, int end) {
+QString Graph::floydWarshall(QVector< QVector<int> > matrix, int nodes, int infinite, int start, int end) {
 
     QVector< QVector<int> > cost = { {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0} };
     QVector< QVector<int> > path = { {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0} };
-
-    int infinite = INT_MAX;
-    int* infinitePtr = &infinite;
 
     for (int i = 0; i < nodes; i ++) {
 
