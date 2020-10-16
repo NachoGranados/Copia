@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.1, 2020-10-15T00:08:17. -->
+<!-- Written by QtCreator 4.13.1, 2020-10-15T21:41:06. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -323,8 +323,9 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/juan/Documents/Tarea2-Datos2-UnitTesting/Datos-2-Tarea-1-Sockets-Punteros/Client/Client.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/juan/Documents/Tarea2-Datos2-UnitTesting/Datos-2-Tarea-1-Sockets-Punteros/Client/Client.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Client2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Client/Client.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Client/Client.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.1, 2020-10-14T20:03:42. -->
+<!-- Written by QtCreator 4.13.1, 2020-10-15T21:41:06. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -64,7 +64,20 @@
     <value type="bool" key="AutoTest.Framework.QtQuickTest">true</value>
     <value type="bool" key="AutoTest.Framework.QtTest">true</value>
    </valuemap>
-   <valuemap type="QVariantMap" key="AutoTest.CheckStates"/>
+   <valuemap type="QVariantMap" key="AutoTest.CheckStates">
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:Testing">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_actualEdges">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_createMatrix">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_findDistance">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_findEdge">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_floydWarshall">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_printPath">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_printSolution01">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_printSolution02">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_printSolution03">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_printSolution13">Checked</value>
+    <value type="Qt::CheckState" key="/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/tst_testing.cpp:test_printSolution31">Checked</value>
+   </valuemap>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>
    <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey"/>
@@ -323,8 +336,9 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/juan/Documents/Tarea2-Datos2-UnitTesting/Datos-2-Tarea-1-Sockets-Punteros/qTest/qTest.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/juan/Documents/Tarea2-Datos2-UnitTesting/Datos-2-Tarea-1-Sockets-Punteros/qTest/qTest.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">qTest2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/qTest.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/juan/Documents/Tarea2-Datos2-UnitTesting/Copia/Server/qTest/qTest.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
